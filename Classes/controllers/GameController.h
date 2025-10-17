@@ -25,6 +25,7 @@ public:
     bool checkGameOver();
 
     GameView* getGameView() const { return _gameView; }
+    GameModel* getGameModel() const { return _gameModel.get(); }
 
 private:
     std::unique_ptr<GameModel> _gameModel;
